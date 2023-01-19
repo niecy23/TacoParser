@@ -36,6 +36,7 @@ namespace LoggingKata
             var parser = new TacoParser();
 
             // DONE - Grab an IEnumerable of locations using the Select command: var locations = lines.Select(parser.Parse);
+            logger.LogInfo("Parsing in Progress");
             var locations = lines.Select(parser.Parse).ToArray();
 
 
